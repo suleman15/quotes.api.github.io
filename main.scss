@@ -1,0 +1,109 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #5372f0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: #202842;
+}
+
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50em;
+    header {
+        
+        font-size: 2.5em;
+        font-weight: 600;
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+    .content {
+        .quote-area {
+            display: flex;
+            gap: 20px;
+            i {
+                font-size: 2em;
+                &.fas.fa-quote-right {
+                    margin-top: auto;
+                }
+            }
+            .quote {
+                font-size: 1.8em;
+                width: 100%;
+                text-align: center;
+            }
+            
+        }
+        .author-area {
+            margin: 20px 0px 0px 0px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 1.6em;
+            align-items: center;
+            span {
+                font-family: monospace;
+                font-size: 2em;
+                margin-top: -23px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .buttons {
+        border-top: 2px solid #0002;
+        margin: 20px 0px 0px 0px;
+        .features {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 15px 0px;
+            ul {
+                list-style-type: none;
+                display: flex;
+                gap: 10px;
+                li {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 1.4em;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                    padding: 10px;
+                    color: #5372f0;
+                    border: 2px solid #5372f0;
+                    transition: background-color .5s, color .5s;
+                    &:hover, &:focus {
+                        color: white;
+                        background-color: #5372f0;
+                    }
+                }
+            }
+            button {
+                background-color: #5372f0;
+                border-radius: 2em;
+                padding: 1em 2em;
+                border: none;
+                outline: none;
+                color: white;
+                letter-spacing: .1em;
+                &.loading {
+                    background-color: #5372f0af;
+                }
+            }
+        }
+    }
+
+}
+

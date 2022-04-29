@@ -1,0 +1,136 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #5372f0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  color: #202842;
+}
+
+.wrapper {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50em;
+}
+
+.wrapper header {
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.wrapper .content .quote-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper .content .quote-area i {
+  font-size: 2em;
+}
+
+.wrapper .content .quote-area i.fas.fa-quote-right {
+  margin-top: auto;
+}
+
+.wrapper .content .quote-area .quote {
+  font-size: 1.8em;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper .content .author-area {
+  margin: 20px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.6em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .content .author-area span {
+  font-family: monospace;
+  font-size: 2em;
+  margin-top: -23px;
+  margin-right: 10px;
+}
+
+.wrapper .buttons {
+  border-top: 2px solid #0002;
+  margin: 20px 0px 0px 0px;
+}
+
+.wrapper .buttons .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 15px 0px;
+}
+
+.wrapper .buttons .features ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper .buttons .features ul li {
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  color: #5372f0;
+  border: 2px solid #5372f0;
+  -webkit-transition: background-color .5s, color .5s;
+  transition: background-color .5s, color .5s;
+}
+
+.wrapper .buttons .features ul li:hover, .wrapper .buttons .features ul li:focus {
+  color: white;
+  background-color: #5372f0;
+}
+
+.wrapper .buttons .features button {
+  background-color: #5372f0;
+  border-radius: 2em;
+  padding: 1em 2em;
+  border: none;
+  outline: none;
+  color: white;
+  letter-spacing: .1em;
+}
+
+.wrapper .buttons .features button.loading {
+  background-color: #5372f0af;
+}
+/*# sourceMappingURL=main.css.map */
